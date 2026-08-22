@@ -96,17 +96,13 @@ section {
 /* ==========================================================================
    Layout
    ========================================================================== */
-#header-wrapper header,
-#main-wrapper main,
+#org-div-home-and-up,
+#content > header,
+#content > footer,
+#main,
 #postamble {
   max-width: var(--max-width);
   margin: 0 auto;
-}
-
-header,
-.outline-2 {
-  max-width: var(--max-width);
-  margin: var(--space-lg) auto;
 }
 
 .outline-2 h2 {
@@ -125,22 +121,15 @@ header,
 /* ==========================================================================
    Header
    ========================================================================== */
-#header-wrapper {
-  background: var(--surface-color);
-  border-bottom: 1px solid var(--border-color);
-}
-
-#header-wrapper header {
-  padding: var(--space-sm) var(--space-md);
-}
 
 #org-div-home-and-up,
 #content > header {
-  margin: var(--space-md);
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-md);
 }
 
 header h1 {
-  margin-bottom: 0;
+  margin: 0 var(--space-lg);
   font-size: var(--font-size-base);
 }
 
@@ -191,14 +180,12 @@ header h1 {
 /* ==========================================================================
    Footer
    ========================================================================== */
-.footer {
+#content > footer {
   text-align: center;
   padding: var(--space-lg) var(--space-md);
 }
 
-h2#footer { display: none; }
-
-.footer .org-ul {
+#content > footer .org-ul {
   list-style: none;
   display: flex;
   justify-content: center;
