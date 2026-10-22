@@ -155,12 +155,18 @@ img {
 #content > header,
 #content > footer,
 #main,
-#postamble {
+#postamble,
+#footnotes {
   max-width: var(--content-max);
   margin-left: auto;
   margin-right: auto;
   padding-left: var(--space-md);
   padding-right: var(--space-md);
+}
+
+#footnotes {
+  font-size: smaller;
+  padding-bottom: var(--space-md);
 }
 
 /* Legacy Org "up / home / down" access-key crumbs — kept small and
